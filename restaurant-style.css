@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #eafaf1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    background-color: #ffffff;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3px solid #1e5631;
+  }
+  
+  .header h1 {
+    font-size: 26px;
+    color: #1e5631;
+  }
+  
+  .header p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #5c946e;
+  }
+  
+  .auth-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-section {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #1e5631;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #f0fdf4;
+  }
+  
+  .auth-section h3 {
+    background-color: #1e5631;
+    color: #fff;
+    margin: 0;
+    padding: 12px;
+    border-radius: 8px 8px 0 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .auth-box {
+    flex-grow: 1;
+    padding: 16px;
+  }
+  
+  .auth-box label {
+    font-size: 13px;
+    color: #2e7d32;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  .auth-box select,
+  .auth-box input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #81c784;
+    font-size: 14px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    flex: 1;
+    padding: 8px;
+    margin: 0 4px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .proceed {
+    background-color: #43a047;
+  }
+  
+  .exit {
+    background-color: #c62828;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 16px 0;
+    border-top: 2px solid #1e5631;
+    background-color: #f6fff8;
+  }
+  
+  .contact h3 {
+    margin-bottom: 6px;
+    color: #1e5631;
+  }
+  
+  .contact p {
+    font-size: 13px;
+    color: #333;
+  }
+  

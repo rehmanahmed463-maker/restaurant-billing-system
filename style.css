@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;           /* full height for screen */
+  overflow: hidden;        /* no outer scroll */
+}
+
+/* Header */
+.top-header {
+  height: 60px;            /* fixed header height */
+  background: #155d27;
+  color: white;
+  text-align: center;
+  line-height: 60px;       /* vertically center text */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 60px - 40px); /* full screen minus header & footer */
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #eafbe7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Top section */
+.top-buttons {
+  flex: 1;
+}
+
+.menu-title {
+  background: #155d27;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Menu buttons */
+.menu-label {
+  display: block;
+  background: #2d6a4f;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-label:hover {
+  background: #40916c;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 15px;
+  margin: 5px 0;
+  display: none;
+}
+
+input[type="checkbox"]:checked + .menu-label + .submenu {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.submenu li {
+  background: #d8f3dc;
+  margin: 4px 0;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submenu li:hover {
+  background: #b7e4c7;
+}
+
+/* Content area */
+.main-content {
+  flex: 1;
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #f1f1f1;
+  border-top: 2px solid #ccc;
+  font-size: 13px;
+  color: #333;
+  padding: 8px 10px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.kot-btn {
+  display: block;
+  background: #155d27;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.kot-btn:hover {
+  background: #0b3d0b;
+}
